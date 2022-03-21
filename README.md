@@ -15,8 +15,13 @@ En este repositorio se encuentran los archivos utilizados para el desarrollo del
 
 # librerias utilizadas
 <b>BERT: </b> es un modelo de representación de lenguaje, que significa Representaciones de codificador bidireccional de Transformers. Está diseñado para entrenar representaciones bidireccionales profundas a partir de texto sin etiquetar a través de una capa contextual, que se compone de capas de atención apiladas y redes de retroalimentación con incorporaciones de entrada y salida de la secuencia.
+<p></p>
 <b>PyTorch: </b>  es una biblioteca de tensores optimizada para el aprendizaje profundo mediante GPU y CPU, proporciona dos funciones de alto nivel: Cálculo de tensor (como NumPy) con fuerte aceleración de GPU y Redes neuronales profundas construidas en un sistema de autogrado basado en cintas.
+<p></p>
 <b>Haystack: </b>  Es un framework de Python para el desarrollo de sistemas de búsqueda en grandes colecciones de documentos, está disponible como una biblioteca de código abierto que proporciona diferentes aplicaciones entra las que destaca la recuperación de respuestas a preguntas.
+<p></p>
 <b>FastAPI: </b> Se trata de un framework que permite construir APIs (Application Programming Interfaces o Interfaz de programación de aplicaciones) de forma rápida con Python, con la finalidad intercambiar datos entre los distintos módulos de un sistema.
+<p></p>
 <b>Elasticserch: </b> es un motor de búsqueda y recuperación de documentos de tipo JSON basado en Apache Lucene, el cual permite realizar búsquedas por una gran cantidad de datos de un texto específico.
+<p></p>
 <b>Streamlit: </b> Es un framework de creación de aplicaciones de código abierto y gratuito creado para proyectos de aprendizaje automático y ciencia de datos, esta herramienta basada en Python permite crear aplicaciones web en tiempo real mientras se va codificando, sin la necesidad de saber HTML o CSS, permite la integración de Bootstrap y crea una interfaz interactiva y amigable con los usuarios.

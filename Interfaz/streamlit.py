@@ -1,3 +1,4 @@
+#Importacion de paquetes
 import streamlit as st
 import requests, json
 from annotated_text import annotated_text
@@ -5,9 +6,9 @@ import os
 from googletrans import Translator
 translator = Translator()
 
-
-qa_ip = os.environ.get('qa_ip', 'https://fastapitesis-m36rwfdc5q-uc.a.run.app')
-qa_port = os.environ.get('qa_port', '85')
+#conexion con el contenedor FastApi
+qa_ip = os.environ.get('qa_ip', 'host.docker.internal')
+qa_port = os.environ.get('qa_port', 85)
 
 
 st.set_page_config(

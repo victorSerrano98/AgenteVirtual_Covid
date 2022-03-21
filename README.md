@@ -5,7 +5,7 @@
 </div>
 <p></p>
  
-Autores:
+<n>Autores:</n>
 	Victor Yamil Serrano Zari,  José Alexis Carrión Ojeda
 
 # Introducción

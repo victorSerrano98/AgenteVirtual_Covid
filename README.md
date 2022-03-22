@@ -48,22 +48,33 @@ Finalmente se realiza el entrenamiento y se procede a guardar el modelo entrenad
 ## Arquitectura del Agente
 La arquitectura fue destinada para implementarla en una aplicación web en donde se emplearon las plataformas de Microsoft Azure y Google Cloud junto herramienta Docker con los contenedores que almacenaron cada módulo del sistema para su desarrollo y posterior levantamiento web, gracias a que permite exponer hacia el exterior cualquier servicio web local que haya desarrollado como en este caso, además permite especificar en qué puerto realizar la conexión al servicio de Streamlit (puerto 9200), FastAPI (puerto 8080) y Streamlit y así facilitar el acceso al modelo ajustado desde cualquier navegador web.
 
-![image](https://user-images.githubusercontent.com/33547749/159567740-783793af-ef01-4b1c-9b97-0c7167266b69.png)
+<div align="center">
+	 <img src ="https://user-images.githubusercontent.com/33547749/159567740-783793af-ef01-4b1c-9b97-0c7167266b69.png" width="600" height="350" />
+</div>
  
 La arquitectura como se manifiesta en la Ilustración anterior, en la cual se observar el funcionamiento e interacciones entre los componentes empleados en el desarrollo del agente conversacional. Los elementos principales, están distinguidos entre Usuario y el conjunto de todo el sistema que está almacenado en contenedores y estos son administrados desde la nube por los servicios de Microsoft Azure y Google Cloud que hacen de hospedadores para los tres contenedores en los que se divide el sistema.
 
 ## Base de conocimiento
 Para la elaboración del conjunto de datos se realizó un preprocesamiento del conjunto de datos CORD-19, ya que cuenta con un total aproximado de un millón de artículos y trabajar con esta basta cantidad de datos generaría cuellos de botella en el procesamiento del sistema. Por lo cual se prepararon aproximadamente cincuenta mil artículos procedentes de bases de datos científicas y medicas como lo son Sciencedirect, Elsevier, NCBI (National Center for Biotechnology Information) y PuMed; donde se funcionaron en un conjunto de datos en el cual se extrajeron diferentes campos como son: sha, title, abstract, publish_time, authors, url, body_text, con los que se creó un dataframe de todos los trabajos de investigación necesarios para poder buscar en ellos, todo este proceso se puede observar en los archivos .ipynb, CreacionLimpiezaDataset y PreprocesamientoDatos en la carpeta Base de conocimiento.
 Para la creación del contenedor Docker se utilizó un contenedor elasticsearch, a continuación, se presentan los comandos utilizados.
- ![image](https://user-images.githubusercontent.com/33547749/159567754-8f723663-b81b-479c-8c22-a180a7a56875.png)
+
+<div align="center">
+	 <img src ="https://user-images.githubusercontent.com/33547749/159567754-8f723663-b81b-479c-8c22-a180a7a56875.png" width="600" height="350" />
+</div>
 
 Luego se realiza la conexión con el contenedor y se agregan los documentos.
- ![image](https://user-images.githubusercontent.com/33547749/159567770-df6d701e-87d3-4e48-8636-471cf7bf8d9f.png)
+
+<div align="center">
+	 <img src ="https://user-images.githubusercontent.com/33547749/159567770-df6d701e-87d3-4e48-8636-471cf7bf8d9f.png" width="350" height="550" />
+</div>
 
 
 ## Creación de la API
 La creación de la API se la realizó mediante el framework FastAPI, aquí se realizó la conexión con el contenedor de ElasticSearch y luego mediante la librería Haystack se logró obtener la respuesta a la pregunta. Posteriormente el api fue agregado a un contenedor de Docker para facilitar su uso.
- ![image](https://user-images.githubusercontent.com/33547749/159567786-0a18b0f0-296e-4e66-9b54-33e487f029ed.png)
+
+<div align="center">
+	 <img src ="https://user-images.githubusercontent.com/33547749/159567786-0a18b0f0-296e-4e66-9b54-33e487f029ed.png" width="350" height="550" />
+</div>
 
 
 
@@ -73,3 +84,5 @@ Finalmente se codifico la parte de la interfaz, la cual se la codifico con la li
 <div align="center">
 	 <img src ="https://user-images.githubusercontent.com/33547749/159361179-e5cae02e-8a26-42cc-acb7-e1c4a0401e1f.png" width="600" height="350" />
 </div>
+
+El resultado final de este proyecto lo puede ver <A HREF="https://streamlittesis-m36rwfdc5q-uc.a.run.app/"> aqui. </A>

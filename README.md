@@ -49,7 +49,7 @@ Finalmente se realiza el entrenamiento y se procede a guardar el modelo entrenad
 La arquitectura fue destinada para implementarla en una aplicación web en donde se emplearon las plataformas de Microsoft Azure y Google Cloud junto herramienta Docker con los contenedores que almacenaron cada módulo del sistema para su desarrollo y posterior levantamiento web, gracias a que permite exponer hacia el exterior cualquier servicio web local que haya desarrollado como en este caso, además permite especificar en qué puerto realizar la conexión al servicio de Streamlit (puerto 9200), FastAPI (puerto 8080) y Streamlit y así facilitar el acceso al modelo ajustado desde cualquier navegador web.
 
 <div align="center">
-	 <img src ="https://user-images.githubusercontent.com/33547749/159567740-783793af-ef01-4b1c-9b97-0c7167266b69.png" width="600" height="350" />
+	 <img src ="https://user-images.githubusercontent.com/33547749/159567740-783793af-ef01-4b1c-9b97-0c7167266b69.png" scale="750" height="350" />
 </div>
  
 La arquitectura como se manifiesta en la Ilustración anterior, en la cual se observar el funcionamiento e interacciones entre los componentes empleados en el desarrollo del agente conversacional. Los elementos principales, están distinguidos entre Usuario y el conjunto de todo el sistema que está almacenado en contenedores y estos son administrados desde la nube por los servicios de Microsoft Azure y Google Cloud que hacen de hospedadores para los tres contenedores en los que se divide el sistema.
@@ -59,13 +59,13 @@ Para la elaboración del conjunto de datos se realizó un preprocesamiento del c
 Para la creación del contenedor Docker se utilizó un contenedor elasticsearch, a continuación, se presentan los comandos utilizados.
 
 <div align="center">
-	 <img src ="https://user-images.githubusercontent.com/33547749/159567754-8f723663-b81b-479c-8c22-a180a7a56875.png" width="600" height="350" />
+	 <img src ="https://user-images.githubusercontent.com/33547749/159567754-8f723663-b81b-479c-8c22-a180a7a56875.png" width="800" height="300" />
 </div>
 
 Luego se realiza la conexión con el contenedor y se agregan los documentos.
 
 <div align="center">
-	 <img src ="https://user-images.githubusercontent.com/33547749/159567770-df6d701e-87d3-4e48-8636-471cf7bf8d9f.png" width="350" height="550" />
+	 <img src ="https://user-images.githubusercontent.com/33547749/159567770-df6d701e-87d3-4e48-8636-471cf7bf8d9f.png" width="800" height="450" />
 </div>
 
 
@@ -73,7 +73,7 @@ Luego se realiza la conexión con el contenedor y se agregan los documentos.
 La creación de la API se la realizó mediante el framework FastAPI, aquí se realizó la conexión con el contenedor de ElasticSearch y luego mediante la librería Haystack se logró obtener la respuesta a la pregunta. Posteriormente el api fue agregado a un contenedor de Docker para facilitar su uso.
 
 <div align="center">
-	 <img src ="https://user-images.githubusercontent.com/33547749/159567786-0a18b0f0-296e-4e66-9b54-33e487f029ed.png" width="350" height="550" />
+	 <img src ="https://user-images.githubusercontent.com/33547749/159567786-0a18b0f0-296e-4e66-9b54-33e487f029ed.png" width="550" height="550" />
 </div>
 
 

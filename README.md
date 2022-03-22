@@ -59,13 +59,13 @@ Para la elaboración del conjunto de datos se realizó un preprocesamiento del c
 Para la creación del contenedor Docker se utilizó un contenedor elasticsearch, a continuación, se presentan los comandos utilizados.
 
 <div align="center">
-	 <img src ="https://user-images.githubusercontent.com/33547749/159567754-8f723663-b81b-479c-8c22-a180a7a56875.png" width="800" height="300" />
+	 <img src ="https://user-images.githubusercontent.com/33547749/159567754-8f723663-b81b-479c-8c22-a180a7a56875.png" width="700" height="150" />
 </div>
 
 Luego se realiza la conexión con el contenedor y se agregan los documentos.
 
 <div align="center">
-	 <img src ="https://user-images.githubusercontent.com/33547749/159567770-df6d701e-87d3-4e48-8636-471cf7bf8d9f.png" width="800" height="450" />
+	 <img src ="https://user-images.githubusercontent.com/33547749/159567770-df6d701e-87d3-4e48-8636-471cf7bf8d9f.png" width="700" height="400" />
 </div>
 
 
